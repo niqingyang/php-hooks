@@ -1,20 +1,36 @@
 {
-    "name": "bainternet/php-hooks",
+    "name": "niqingyang/php-hooks",
     "description": "A fork of the WordPress filters hook system rolled in to a class to be ported into any PHP-based system",
     "keywords": ["hooks", "actions", "filters"],
-    "homepage": "http://bainternet.github.io/PHP-Hooks/",
+    "homepage": "http://niqingyang.github.io/php-hooks/",
     "type": "library",
     "license": "GPL-3.0",
     "authors": [
         {
             "name": "Ohad Raz",
             "homepage": "https://en.bainternet.info/"
+        },
+        {
+            "name": "niqingyang",
+            "homepage": "https://acme.top/"
         }
     ],
     "support": {
-        "issues": "https://github.com/bainternet/PHP-Hooks/issues"
+        "issues": "https://github.com/niqingyang/php-hooks/issues"
     },
-    "autoload":{
-        "files": ["php-hooks.php"]
-    }
+    "require": {
+    },
+  	"require-dev": {
+    },
+    "autoload": {
+		"psr-4": {
+			"\\": "src/"
+		}
+    },
+	"repositories": {
+		"packagist": {
+			"type": "composer",
+			"url": "https://packagist.phpcomposer.com"
+		}
+	}
 }
